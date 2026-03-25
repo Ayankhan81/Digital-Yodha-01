@@ -321,7 +321,7 @@ body {
 .container {
   /* max-width: 1100px; */
   /* margin: auto; */
-  padding: 5%;
+  padding: 5% 5% 0% 5%;
 }
 
 h1 {
@@ -337,7 +337,7 @@ h1 {
 }
 
 .card {
-  padding: 5%;
+  padding: 3%;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -374,27 +374,56 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
+
+#hr-line {
+  margin-top: 5%;
+  border: none;
+  border-top: 1px solid #333;
+  /* margin: 40px 0; */
+}
+.inclusive{
+  text-align: center;
+ 
+}
+.para{
+  font-size: 2rem;
+      color:#71cfb7; 
+      margin-top: 2rem;
+      line-height: 0.3;
+}
+#incluisve-para{
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 400; 
+}
 /* ************workspace section */
 .work-space-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2%;
-  background-color: #000;
+  padding: 4% 5% 2%;
+  background-color: #0b0f19;
   justify-items: center;
   gap: 4%;
   /* width: 100%; */
 }
-
+.workshop-content h2,
+.workshop-content span{
+    margin-top: 4px;
+}
 .work {
-  border: 1px solid white;
+  border: 1px solid #7cf3d6;
+   box-shadow: 0 0 10px rgba(124, 243, 214, 0.3);
+   background-color: rgba(124, 243, 214, 0.05);
+   transition: 0.3s ease;
+   width: 100%;
   height: 10rem;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -402,13 +431,15 @@ p {
   align-items: center;
 }
 .workshop-logo i{
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 .workshop-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5%;
+
 }
 
 @media(max-width: 1280px){
@@ -427,7 +458,7 @@ p {
     justify-items: center;
   }
   .work{ 
-  width: 80%;
+  width: 100%;
   }
 }
 
