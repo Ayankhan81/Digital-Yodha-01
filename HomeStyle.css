@@ -101,9 +101,7 @@ body {
   align-items: center;
   padding: 10% 4% 2% 4%;
 }
-.hero-left {
-  max-width: 500px;
-}
+
 .hero h1 {
   font-size: 60px;
   line-height: 1.2;
