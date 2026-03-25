@@ -380,6 +380,57 @@ p {
     grid-template-columns: 1fr;
   }
 }
+/* ************workspace section */
+.work-space-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2%;
+  background-color: #000;
+  justify-items: center;
+  gap: 4%;
+  /* width: 100%; */
+}
+
+.work {
+  border: 1px solid white;
+  height: 10rem;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.workshop-logo i{
+  font-size: 25px;
+}
+.workshop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 1280px){
+  .work-space-main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work{ 
+  width: 100%;
+  }
+
+}
+
+@media(max-width: 968px){
+  .work-space-main{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .work{ 
+  width: 80%;
+  }
+}
+
 
 
 
